@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growflix - Todos os vídeos da Growdev em um só lugar.</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.5/css/bootstrap.min.css">
+    
+
+</head>
+<body>
+    <header class="container-fluid banner-home">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <figure>
+                                <img src="./assets/images/logo-growflix.svg" alt="logo growflix" class="logo d-inline-block align-text-top">
+                            </figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="./index.html">
+                                    Início
+                                </a>
+                                <a href="#growcast-items" class="nav-link">
+                                    Growcast[episódios]
+                                </a>
+                                <a href="#webinar-items" class="nav-link">
+                                    Webinar em Flutter
+                                </a>
+                                <a href="#ux-ui-items" class="nav-link">
+                                    Jornada UX/UI
+                                </a>
+                                <a href="#geral-items" class="nav-link">
+                                    Diversos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row row-home-growcast">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="col-12 pt-5">
+                            <p class="text-light fw-bold">
+                                <small>PODCAST</small>
+                                <br>
+                                <span class="display-1 fw-bold">
+                                    GROWCAST
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <button type="button" class="btn btn-light fw-bold" data-link="https://www.youtube.com/embed/7OWT3lfHYvE" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                                </svg>
+                                Assistir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row line-row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row pb-5" id="growcast-items">
+                        <div class="col-12 pt-2">
+                            <p class="fw-bold mb-0">
+                                <a class="link-growdev" href="#groecast-items">
+                                    Growcast [Episódios]
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                                    </svg> 
+                                </a>   
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/aJ-HZuLcKeA/sddefault.jpg" class="img-fluid" alt="episódio Manoel Roldão">
+                                </figure>
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/aJ-HZuLcKeA" onclick="openMovie(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>                                            </path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path> 
+                                    </svg>
+                                    <span>
+                                        Growcast #00 - Conheça a Growdev
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/7OWT3lfHYvE/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/7OWT3lfHYvE" onclick="openMovie(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                    </svg>
+                                    <span>
+                                        Growcast #01 - As profissões do futuro
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/ci1eQGPK89o/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/ci1eQGPK89o" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #02 - Como seguir a carreira internacional?</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/WM7pGG7OicQ/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>    
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/WM7pGG7OicQ" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #03 - Superando os desafios da carreira de Dev!</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/2c8VOBZ160Y/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>   
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/2c8VOBZ160Y" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #04 - Agile Master: tudo sobre a profissão!</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/mxnEm03cYPc/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>    
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/mxnEm03cYPc" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #5 - Como iniciar na carreira em Desenvolvimento de Softwares?</span>
+                                </p>  
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/m7DyR07KrOE/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>    
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/m7DyR07KrOE" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #06 - Mulheres e inclusão na tecnologia</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/vW8G9KPwRL0/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>     
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/vW8G9KPwRL0" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #07 - Desenvolvendo profissionais na área de TI</span>
+                                </p>  
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/_Ut2KqAqPyk/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>    
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/_Ut2KqAqPyk" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #8 - A solução que está transformando o mercado de TI no Brasil</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-movie">
+                            <div class="item-hover">
+                                <figure>
+                                    <img src="https://img.youtube.com/vi/dfDgs0Ive2Q/sddefault.jpg" class="img-fluid" alt="">
+                                </figure>    
+                                <p class="detail-movie" data-link="https://www.youtube.com/embed/dfDgs0Ive2Q" onclick="openMovie(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                </svg>
+                                <span>Growcast #9 - Acompanhe com quem realmente entende, tudo sobre o mercado de trabalho no mundo da TI</span>
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row pb-5" id="webinar-items">
+                            <div class="col-12 pt-2">
+                                <p class="fw-bold mb-0">
+                                    <a href="#webinar-items" class="link-growdev">
+                                        Webinar em Flutter
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-movie">
+                                <div class="item-hover">
+                                    <figure>
+                                        <img src="https://img.youtube.com/vi/WKbLXuP9S-c/sddefault.jpg" class="img-fluid" alt="">
+                                    </figure>
+                                    <p class="detail-movie" data-link="https://www.youtube.com/embed/WKbLXuP9S-c" onclick="openMovie(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                        </svg>
+                                        <span>Webinar - Recriando a interface do Linkedin com Flutter</span>
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-movie">
+                                <div class="item-hover">
+                                    <figure>
+                                        <img src="https://img.youtube.com/vi/dJ6y1zMjVXU/sddefault.jpg" class="img-fluid" alt="">
+                                    </figure>
+                                    <p class="detail-movie" data-link="https://www.youtube.com/embed/dJ6y1zMjVXU" onclick="openMovie(this)">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                      </svg>
+                                      <span>Webinar - Recriando a interface do Instagram com Flutter</span>
+                                    </p>
+                                  </div>
+                            </div>
+                             <div class="col-12 col-sm-6 col-md-3 col-movie">
+                                <div class="item-hover">
+                                    <figure>
+                                        <img src="https://img.youtube.com/vi/8rdJsqUjsGg/sddefault.jpg" class="img-fluid" alt="">
+                                    </figure>
+                                    <p class="detail-movie" data-link="https://www.youtube.com/embed/8rdJsqUjsGg" onclick="openMovie(this)">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                      </svg>
+                                      <span>Webinar - Recriando a interface do iFood com Flutter</span>
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-movie">
+                                <div class="item-hover">
+                                    <figure>
+                                        <img src="https://img.youtube.com/vi/C4p_7qBsECw/sddefault.jpg" class="img-fluid" alt="">
+                                    </figure>
+                                    <p class="detail-movie" data-link="https://www.youtube.com/embed/C4p_7qBsECw" onclick="openMovie(this)">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                      </svg>
+                                      <span>Webinar - Recriando a interface do PicPay com Flutter</span>
+                                    </p>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-movie">
+                                <div class="item-hover">
+                                    <figure>
+                                        <img src="https://img.youtube.com/vi/L1pKoMC6hWk/sddefault.jpg" class="img-fluid" alt="">
+                                    </figure>
+                                    <p class="detail-movie" data-link="https://www.youtube.com/embed/L1pKoMC6hWk" onclick="openMovie(this)">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                                      </svg>
+                                      <span>Webinar - Recriando o layout do WhatsApp com Flutter</span>
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 pt-5">
+                            Dúvidas? Ligue 0800 591 8942
+                        </div>
+                        <div class="col-6 col-sm-3 pt-5">
+                            <p class="smal">Perguntas frequentes</p>
+                            <p class="smal">Relações com investidores</p>
+                            <p class="smal">Formas de assistir</p>
+                            <p class="smal">Informações corporativas</p>
+                            <p class="smal">Só na Growflix</p>
+                        </div>
+                        <div class="col-6 col-sm-3 pt-5">
+                            <p class="small">Central de Ajuda</p>
+                            <p class="small">Carreiras</p>
+                            <p class="small">Termos de Uso</p>
+                            <p class="small">Entre em contato</p>
+                        </div>
+                        <div class="col-6 col-sm-3 pt-5">
+                            <p class="small">Conta</p>
+                            <p class="small">Resgatar cartão pré-pago</p>
+                            <p class="small">Privacidade</p>
+                            <p class="small">Teste de velocidade</p>
+                        </div>
+                        <div class="col-6 col-sm-3 pt-5">
+                            <p class="small">Media Center</p>
+                            <p class="small">Comprar cartão pré-pago</p>
+                            <p class="small">Preferências de cookies</p>
+                            <p class="small">Avisos legais</p>
+                        </div>
+                        <div class="col-12 pt-5 pb-5">
+                            Growflix Growdev
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal do vídeo -->
+    <div class="modal fade" id="movie-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="iframe-movie" style="aspect-ratio: 16/9; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/libs/bootstrap-5.3.5/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/data.js"></script> -->
+    <script src="./js/movies.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
